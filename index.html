@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Destination Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Ask the Map</h1>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#explore">Explore</a>
+                <a href="#culture">Culture</a>
+                <a href="#stories">Stories</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Input -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Dream Destination</h1>
+            <p class="hero-subtitle">Enter your perfect place and explore its wonders</p>
+            <form class="dream-input-form">
+                <div class="input-group">
+                    <input type="text"  id="input-text" placeholder="Describe your dream place (e.g., mountains with river)" class="dream-input" value="Alpine Mountains with River">
+                    <button id="button-find" type="submit" class="explore-btn">Explore</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Location Header -->
+            <section class="location-header">
+                <h1 class="location-title">Alpine Mountains with River</h1>
+                <p class="location-subtitle">Swiss Alps Region, Switzerland</p>
+            </section>
+
+            <!-- Map and Info Section -->
+            <section class="map-info-section">
+                <div class="map-container">
+                    <div class="map-wrapper">
+                        <div id="map" class="map-placeholder">
+                            <div class="map-pin">📍</div>
+                            <div class="map-details">
+                                <h3>Swiss Alps</h3>
+                                <p id="coords-output">46.5197° N, 7.4815° E</p>
+                            </div>
+                        </div>
+                        <div class="map-legend">
+                            <div class="legend-item">
+                                <span class="legend-color mountain"></span>
+                                <span>Mountain Peaks</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color river"></span>
+                                <span>Rivers & Lakes</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color forest"></span>
+                                <span>Alpine Forests</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-container">
+                    <div class="info-section">
+                        <h2>About This Place</h2>
+                        <p>The Swiss Alps with their pristine rivers represent one of Europe's most spectacular natural landscapes. These majestic peaks, carved by ancient glaciers and fed by crystal-clear mountain streams, offer breathtaking views and unparalleled natural beauty.</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <h3>🏔️ Geography</h3>
+                                <p>Elevation: 1,500-4,634m<br>
+                                Area: 65,000 km²<br>
+                                Major Rivers: Rhine, Rhône, Inn</p>
+                            </div>
+                            <div class="info-card">
+                                <h3>🏛️ History</h3>
+                                <p>The Alps have been inhabited for over 50,000 years. Ancient trade routes crossed these mountains, connecting northern and southern Europe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>When to Visit</h2>
+                        <div class="season-grid">
+                            <div class="season-card">
+                                <h4>🌸 Spring (Mar-May)</h4>
+                                <p>Perfect for hiking with blooming flowers and moderate temperatures.</p>
+                            </div>
+                            <div class="season-card">
+                                <h4>☀️ Summer (Jun-Aug)</h4>
+                                <p>Best for river activities, camping, and mountain climbing.</p>
+                            </div>
+                            <div class="season-card">
+                                <h4>🍂 Autumn (Sep-Nov)</h4>
+                                <p>Beautiful foliage and fewer crowds make it ideal for photography.</p>
+                            </div>
+                            <div class="season-card">
+                                <h4>❄️ Winter (Dec-Feb)</h4>
+                                <p>World-class skiing and snow-covered landscapes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Nearby Hotels & Accommodations</h2>
+                        <div class="hotels-grid">
+                            <div class="hotel-card">
+                                <h4>🏨 Alpine Grand Hotel</h4>
+                                <p>Luxury resort with mountain views<br>
+                                Price: $200-400/night<br>
+                                Rating: ⭐⭐⭐⭐⭐</p>
+                            </div>
+                            <div class="hotel-card">
+                                <h4>🏡 Mountain River Lodge</h4>
+                                <p>Cozy riverside accommodation<br>
+                                Price: $120-250/night<br>
+                                Rating: ⭐⭐⭐⭐</p>
+                            </div>
+                            <div class="hotel-card">
+                                <h4>⛺ Alpine Camping Resort</h4>
+                                <p>Eco-friendly camping experience<br>
+                                Price: $30-80/night<br>
+                                Rating: ⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h2>Activities & Attractions</h2>
+                        <div class="activities-list">
+                            <div class="activity-item">
+                                <span class="activity-icon">🥾</span>
+                                <div>
+                                    <h4>Mountain Hiking</h4>
+                                    <p>Explore scenic trails with breathtaking views</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-icon">🚣</span>
+                                <div>
+                                    <h4>River Rafting</h4>
+                                    <p>Experience thrilling rapids and calm waters</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-icon">📸</span>
+                                <div>
+                                    <h4>Photography Tours</h4>
+                                    <p>Capture the perfect alpine moments</p>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-icon">🧗</span>
+                                <div>
+                                    <h4>Rock Climbing</h4>
+                                    <p>Challenge yourself on natural rock faces</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photo Gallery Section -->
+            <section class="photo-gallery">
+                <h2>Experience the Beauty</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Alpine Mountain with River">
+                        <div class="gallery-caption">
+                            <h3>Pristine Alpine River</h3>
+                            <p>Crystal clear waters flowing through majestic peaks</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1366909/pexels-photo-1366909.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mountain Peak">
+                        <div class="gallery-caption">
+                            <h3>Snow-Capped Peaks</h3>
+                            <p>Towering summits reaching for the sky</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alpine Lake">
+                        <div class="gallery-caption">
+                            <h3>Mirror Lake</h3>
+                            <p>Perfect reflections of mountain glory</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alpine Meadow">
+                        <div class="gallery-caption">
+                            <h3>Alpine Meadows</h3>
+                            <p>Wildflowers blooming in mountain valleys</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=600" alt="River Valley">
+                        <div class="gallery-caption">
+                            <h3>River Valley</h3>
+                            <p>Winding waters through green landscapes</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.pexels.com/photos/1682497/pexels-photo-1682497.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Alpine Village">
+                        <div class="gallery-caption">
+                            <h3>Alpine Village</h3>
+                            <p>Traditional mountain architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cultural Heritage Section -->
+            <section class="cultural-section">
+                <h2>Cultural Heritage</h2>
+                <div class="culture-grid">
+                    <div class="culture-item">
+                        <h3>Alpine Traditions</h3>
+                        <p>Centuries-old customs including yodeling, alphorn playing, and traditional folk dances that celebrate the mountain way of life.</p>
+                    </div>
+                    <div class="culture-item">
+                        <h3>Mountain Cuisine</h3>
+                        <p>Hearty dishes like fondue, raclette, and rösti that reflect the region's dairy farming heritage and provide sustenance for mountain living.</p>
+                    </div>
+                    <div class="culture-item">
+                        <h3>Architectural Heritage</h3>
+                        <p>Traditional wooden chalets and stone buildings designed to withstand harsh mountain weather while blending harmoniously with the landscape.</p>
+                    </div>
+                    <div class="culture-item">
+                        <h3>Conservation Efforts</h3>
+                        <p>Modern initiatives to preserve both natural beauty and cultural traditions while promoting sustainable tourism in the Alps.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Dream Destination Explorer. Inspired by natural beauty and cultural heritage.</p>
+        </div>
+    </footer> -->
+   
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAWKPKb-7HQ0f-ttY9sU7bIPYqvB68hjc&loading=async&callback=initMap"></script>
+   <script src="main.js"></script>
+</body>
+</html>
