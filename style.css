@@ -102,7 +102,7 @@ body {
 
 /* Hero Section with Parallax Effect */
 .hero {
-    background-image: url("/img/new.jpeg");
+    background-image: url("new.jpeg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
